@@ -1,3 +1,13 @@
+const body = document.querySelector("body")
+const app = document.querySelector(".app");
+if (window.innerWidth < 1200) {
+    app.style.display = "none";
+    alert("  Chưa reponsive cho màn hình điện thoại. Vui lòng mở website bằng máy tính.")
+} else {
+        app.style.display = "block";
+}
+
+const liMoives = document.querySelectorAll(".li-movies");
 const link = document.querySelectorAll(".link");
 
 link.forEach((item) =>{
@@ -11,6 +21,13 @@ link.forEach((item) =>{
         
 })
 
-const filmItems = document.querySelectorAll(".film");
-const contentFilm = document.querySelector(".films-content");
 
+liMoives.forEach((liItem) => {
+    liItem.addEventListener("click", (event) => {
+        event.preventDefault();
+        liMoives.forEach((li) => {
+            li.classList.remove("li-active");
+        });
+        liItem.classList.add("li-active");
+    });
+})

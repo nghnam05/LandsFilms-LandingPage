@@ -1,6 +1,6 @@
 body {
     font-family: "Open Sans", sans-serif;
-    height: 10000px;
+    height: 100%;
     width: 100%;
     overflow-x: hidden;
     background-color : black;
@@ -182,6 +182,42 @@ body {
     
 }
 
+.films {
+    width: 250px;
+    transition: all .4s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    transition: width .4s ease;
+}
+
+.films_18 {
+    background-image: url("../img/pic18.png");
+
+    
+}
+
+.films_19 {
+    background-image: url("../img/pic19.png");
+
+    
+}
+
+.films_20 {
+    background-image: url("../img/pic20.png");
+
+    
+}
+
+.films_21 {
+    background-image: url("../img/pic21.png");
+
+    
+}
+
+
+
 .films-content {
     display: none;
     transition: all .2s ease;
@@ -189,4 +225,53 @@ body {
 
 .film:hover .films-content {
     display: block;
+}
+
+
+
+.nav li a {
+    color: #FFF;
+    font-family: Nunito;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;     
+}
+
+.body {
+    display: grid;
+    grid-template-columns: .5fr 4fr;
+}
+
+.li-movies {
+    transition: background .4s ease;
+    padding: 15px 5px;
+}
+
+.li-active {
+    background: linear-gradient(270deg, #053BA3 0%, rgba(5, 59, 163, 0.22) 100%);
+}
+
+.films:hover{
+    width: 300px;
+    cursor: pointer;
+    animation: none;
+    transition: all .3s;
+}
+
+.films:hover .films-content {
+    display: block;
+}
+
+.watch-anywhere {
+    background: linear-gradient(180deg, rgba(5, 59, 163, 0.00) 0%, #053BA3 100%);
+}
+.btn1{
+    transition: all .4s ease;
+}
+
+.btn1:hover {
+    color: #fff;
+    background-color : black;
 }
