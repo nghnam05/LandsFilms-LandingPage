@@ -23,6 +23,7 @@ body {
 }
 
 .link-active {
+    color : purple !important;
     border-bottom: 2px solid #eeeeee;
 }
 
@@ -91,12 +92,13 @@ body {
     transition: width .4s ease;
 }
 
+
 .film:hover{
     width: 500px;
     cursor: pointer;
     animation: none;
     transition: all .3s;
-}
+}    
 
 
 
@@ -245,12 +247,13 @@ body {
 }
 
 .li-movies {
-    transition: background .4s ease;
     padding: 15px 5px;
+    transition: background .4s ease;
 }
 
 .li-active {
     background: linear-gradient(270deg, #053BA3 0%, rgba(5, 59, 163, 0.22) 100%);
+    transition: background .4s ease;
 }
 
 .films:hover{
@@ -274,4 +277,31 @@ body {
 .btn1:hover {
     color: #fff;
     background-color : black;
+}
+
+.social-icon .sp2:hover {
+    cursor: pointer;
+}
+
+
+.login-f input {
+    width: 100%;
+    padding: 15px 10px;
+    border: 1px solid #eeeeee;
+    border-radius: 15px;
+}
+
+.login-active {
+    visibility: visible;
+}
+.login-form {
+    transition: all .2s;
+}
+
+.signForm {
+    visibility: hidden;
+}
+
+.sign-active {
+    visibility: visible;
 }

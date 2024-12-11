@@ -27,7 +27,7 @@
         <div class="container w-[1400px] mx-auto">
 
             <!-- header -->
-            <header class="header flex justify-between items-center text-white py-[15px]" data-aos="fade-down"
+            <header class="header bg-black flex justify-between items-center text-white py-[15px]" data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="500">
 
@@ -45,10 +45,10 @@
 
                 <div class="action flex gap-[32px]">
                     <div class="icon">
-                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <span><i class="fa-solid fa-magnifying-glass fa-search"></i></span>
                     </div>
                     <div class="icon">
-                        <span><i class="fa-solid fa-user"></i></span>
+                        <span><i class="fa-solid fa-user fa-user"></i></span>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                     </span>
                 </div>
                 <div data-aos="flip-up" data-aos-duration="2000" class="w-full list-films flex gap-[20px]">
-                    <div class="film films_1 films-show h-[351px] rounded-lg flex items-end">
+                    <div class="film films_1 h-[351px] rounded-lg flex items-end">
                         <div class="films-content w-full h-[107px] flex flex-col justify-between bg-black bg-opacity-50 py-[10px] px-[19px] text-white">
                             <div class="head flex justify-between items-center">
                                 <h3 class="font-[Righteous] text-[25px] font-normal">Saint Omer</h3>
@@ -580,7 +580,7 @@
                     <img src="./dist/img/main.png" alt="">
                     <div data-aos="fade-left" class="absolute flex top-[300px] left-[50px]">
                         <img src="./dist/img/tablet.png" alt="">
-                        <img src="./dist/img/mobile.png" alt="">
+                        <img src="./dist/img/mobile.png" alt="" class="h-[300px]">
                     </div>
                 </div>
 
@@ -591,11 +591,11 @@
             <div class="max-w-[1200px]  mx-auto py-[25px] flex justify-between items-start">
                 <div class="social w-[30%] flex flex-col items-center">
                     <div class="mb-[20px]">
-                        <span class="text-white text-[30px]">Connect with us : </span>
+                        <span class="text-white text-[25px] uppercase font-medium">Connect with us : </span>
                     </div>
                     <ul class="social-icon flex gap-[10px]">
                         <li>
-                            <span>
+                            <span class="sp2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
                                 <g filter="url(#filter0_d_14_30)">
                                   <circle cx="29" cy="25" r="25" fill="#393939" fill-opacity="0.51" shape-rendering="crispEdges"/>
@@ -617,7 +617,7 @@
                             </span>
                         </li>
                         <li>
-                            <span>
+                            <span class="sp2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
                                     <g filter="url(#filter0_d_14_20)">
                                       <circle cx="29" cy="25" r="25" fill="#393939" fill-opacity="0.51" shape-rendering="crispEdges"/>
@@ -639,7 +639,7 @@
                             </span>
                         </li>
                         <li>
-                            <span>
+                            <span class="sp2">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="58" height="58" viewBox="0 0 58 58" fill="none">
                                     <g filter="url(#filter0_d_14_25)">
                                       <circle cx="29" cy="25" r="25" fill="#393939" fill-opacity="0.51" shape-rendering="crispEdges"/>
@@ -693,7 +693,75 @@
             </div>
         </footer>
 
-
+        <div class=" login-form fixed top-0 left-0 right-0 w-screen h-[100vh] bg-gray-950 bg-opacity-70 z-20 flex items-start justify-center invisible">
+            <div class="login-f bg-white relative w-[600px] border border-1 mt-[50px] flex flex-col items-center py-[30px] px-[30px] rounded-[12px]">
+                <h3 class="text-blue-600 text-[35px] font-bold mb-[15px]">Đăng ký</h3>
+                <p class="text-base text-gray-600">Vui lòng đăng nhập để tiếp tục trải nhiệm !</p>
+                <form action="" class="w-full flex flex-col justify-center items">
+                    <div class="mt-[40px]">
+                        <label for="email" class="flex flex-col gap-[11px]">
+                            <span class="text-black font-bold">Email :</span>
+                            <input type="text" placeholder="abc123@gmail.com">
+                        </label>
+                    </div>
+                    <div class="mt-[15px]">
+                        <label for="password" class="flex flex-col gap-[11px]">
+                            <span class="text-black font-bold">Password :</span>
+                            <input type="password" placeholder="**********" required maxlength="16">
+                        </label>
+                    </div>
+                    <div class="mt-[15px]">
+                        <label for="numberphone" class="flex flex-col gap-[11px]">
+                            <span class="text-black font-bold">Số điện thoại :</span>
+                            <input type="password" placeholder="+84 345xxxx909" required maxlength="16">
+                        </label>
+                    </div>
+                    <div class="flex justify-center">
+                        <button class="btn mt-[22px] w-[200px] bg-green-600 py-[10px] px-[30px] rounded-full" type="submit">
+                            <span class="sign-btn text-base font-semibold text-white">Đăng Kí</span>
+                        </button>
+                    </div>
+                </form>
+                <div class="flex w-full justify-center items-center gap-[13px] mt-[30px]">
+                    <a href="#" class="text-gray-700 underline">Bạn đã có tài khoản?</a>
+                    <a href="#" class="sign-btn1 text-blue-500 underline font-semibold">Đăng nhập</a>
+                    
+            </div>
+            <div class="exit absolute top-[20px] right-[40px] cursor-pointer">
+                <i class="fa-solid fa-xmark text-[25px] text-red-600"></i>
+            </div>
+        </div>
+            
+        </div>
+        <div class="signForm fixed top-0 left-0 right-0 w-screen h-[100vh] bg-gray-950 bg-opacity-70 z-20 flex items-start justify-center invisible">
+            <div class="login-f bg-white relative w-[600px] border border-1 mt-[50px] flex flex-col items-center py-[30px] px-[30px] rounded-[12px]">
+            <h3 class="text-blue-600 text-[35px] font-bold mb-[15px]">Đăng nhập</h3>
+            <p class="text-base text-gray-600">Vui lòng đăng nhập để tiếp tục trải nghiệm!</p>
+            <form action="" class="w-full flex flex-col justify-center items">
+            <div class="mt-[40px]">
+            <label for="email" class="flex flex-col gap-[11px]">
+                                    <span class="text-black font-bold">Email :</span>
+                                    <input type="text" placeholder="abc123@gmail.com">
+                                </label>
+                                </div>
+                                <div class="mt-[15px]">
+                                <label for="password" class="flex flex-col gap-[11px]">
+                                <span class="text-black font-bold">Password :</span>
+                                <input type="password" placeholder="**********" required maxlength="16">
+                                </label>
+                                </div>
+                                <div class="flex justify-center">
+                                <button class="btn mt-[22px] w-[200px] bg-green-600 py-[10px] px-[30px] rounded-full" type="submit">
+                                <a href="./index.html" class="text-base font-semibold text-white">Đăng Nhập</a>
+                                </button>
+                                </div>
+                                </form>
+                                <div class="exits absolute top-[20px] right-[40px] cursor-pointer">
+                                <i class="fa-solid fa-xmark text-[25px] text-red-600"></i>
+                                </div>
+                                </div>
+        </div>
+        
 
     </div>
 
