@@ -1,0 +1,192 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    height: 10000px;
+    width: 100%;
+    overflow-x: hidden;
+    background-color : black;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+.navbar .link {
+    color: #FFF;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    padding: 5px 0;
+    line-height: normal;
+    transition: all .2s ease;
+}
+
+.link-active {
+    border-bottom: 2px solid #eeeeee;
+}
+
+
+.action .icon:hover {
+    cursor: pointer;
+}
+
+
+
+.action .icon span i {
+    font-size: 20px;
+}
+
+.content-left,
+.content-right {
+    display: flex;
+    justify-content: end;
+   
+}
+
+.content-left{
+    
+    background-image: url("../img/herobg1.png");
+    
+}
+
+.content-right {
+    background-image: url("../img/herobg2.png");
+
+}
+
+.content-text{
+    height: 100%;
+    width: 261px;
+    border-radius: 0px 10px 10px 0px;
+    background: rgba(16, 16, 16, 0.30);
+    backdrop-filter: blur(2px);
+    padding: 14px;
+}
+
+.btn-more {
+    transition: all .3s;
+}
+
+.btn-more:hover {
+    background-color: #006BFF;
+}
+
+.fa-heart {
+    transition: all 0.3s;
+}
+
+.fa-heart:hover {
+    cursor: pointer;
+    font-weight: bold;
+    color: Red;
+}
+.film {
+    width: 300px;
+    transition: all .4s ease;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    transition: width .4s ease;
+}
+
+.film:hover{
+    width: 500px;
+    cursor: pointer;
+    animation: none;
+    transition: all .3s;
+}
+
+
+
+.films_1 {
+    background-image: url("../img/image9.png");
+   
+    
+}
+.films_2 {
+    background-image: url("../img/image2.png");
+
+    
+}
+.films_3 {
+    background-image: url("../img/image4.png");
+   
+    
+}
+.films_4 {
+    background-image: url("../img/image5.png");
+   
+    
+}
+.films_5 {
+    background-image: url("../img/image6.png");
+    
+    
+}
+.films_6 {
+    background-image: url("../img/image7.png");
+   
+    
+}
+.films_7 {
+    background-image: url("../img/image8.png");
+    
+    
+}
+
+.films_8 {
+    background-image: url("../img/pic9.png");
+
+    
+}
+.films_9 {
+    background-image: url("../img/pic10.png");
+  
+    
+}
+.films_10 {
+    background-image: url("../img/pic11.png");
+  
+}
+.films_11 {
+    background-image: url("../img/pic12.png");
+
+}
+.films_12 {
+    background-image: url("../img/pic8.png");
+
+}
+
+
+.films_13 {
+    background-image: url("../img/pic13.png");
+    
+}
+.films_14 {
+    background-image: url("../img/pic14.png");
+    
+}
+.films_15 {
+    background-image: url("../img/pic15.png");
+
+}
+.films_16 {
+    background-image: url("../img/pic16.png");
+  
+}
+.films_17 {
+    background-image: url("../img/pic17.png");
+
+    
+}
+
+.films-content {
+    display: none;
+    transition: all .2s ease;
+}
+
+.film:hover .films-content {
+    display: block;
+}
