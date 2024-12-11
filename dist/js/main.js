@@ -1,11 +1,15 @@
-const body = document.querySelector("body")
-const app = document.querySelector(".app");
-if (window.innerWidth < 1200) {
-    app.style.display = "none";
-    alert("  Chưa reponsive cho màn hình điện thoại. Vui lòng mở website bằng máy tính.")
-} else {
-        app.style.display = "block";
-}
+document.addEventListener("DOMContentLoaded", () => {
+    const minWidth = 1200; // Kích thước tối thiểu để hiển thị nội dung
+    if (window.innerWidth < minWidth) {
+      document.body.style.display = "none";
+      alert("Trang web này không khả dụng cho thiết bị có kích thước màn hình < 1200px")
+
+    } else {
+
+      document.body.style.display = "block";
+    }
+  });
+
 
 const liMoives = document.querySelectorAll(".li-movies");
 const link = document.querySelectorAll(".link");
